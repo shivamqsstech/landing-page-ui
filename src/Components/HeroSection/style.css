@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+}
+
+.Content-left h1 {
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.Content-left {
+  width: 50%;
+}
+
+.paragraph {
+  width: 60%;
+}
+
+.paragraph p {
+  font-weight: 500;
+}
+
+.buttons ul {
+  display: flex; 
+    gap: 20px;
+} 
+.buttons ul li {
+  list-style: none;
+  width: 130px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  font-weight: 500;
+  height: 25px;
+}
+
+.shopNowBtn {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.categoryBtn {
+  border: 1px solid black;
+  color: grey;
+}
+
+.buttons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tags{
+    margin-top: 30px;
+}
+
+.tags span{
+    color: grey;
+}
+
+.brand_logo{
+    display: flex;
+    gap: 20px;
+}

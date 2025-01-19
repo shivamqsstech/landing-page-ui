@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+    /* justify-content: center; */
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: inherit;
+    
+
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+  }
+
+.navItems ul{
+    display: flex;
+    list-style: none;
+    /* flex-direction: column; */
+    gap: 15px;
+
+}
+
+
+.loginBtn button{
+    display: flex;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginBtn button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+
+/* Making Navbar responsive */
+
+
+@media (max-width :768px){
+    .navItems{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 100%;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        /* position: sticky; */
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+  /* Show navItems when `show` class is applied */
+  .navItems.show {
+    display: flex;
+  }
+    
+    
+
+
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+      .hamburger span {
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        border-radius: 5px;
+      }
+    
+      .mobile-login.show {
+        display: flex;
+        margin-top: 10px;
+      }
+    
+      .loginBtn {
+        display: none;
+      }
+  
+}
+
